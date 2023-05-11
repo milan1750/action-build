@@ -1,6 +1,6 @@
-name: 'WPEverest Build Action'
-author: WPEverest
-description: 'Build WPEverest plugins using Composer and NPM.'
+name: 'Simple PHP Build Action'
+author: Milan1750
+description: 'Build PHP app using Composer.'
 inputs:
   generate-zip:
     description: 'Generate package zip file?'
