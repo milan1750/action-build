@@ -20,11 +20,8 @@ echo "::set-output name=path::$DEST_PATH"
 
 cd "$GITHUB_WORKSPACE" || exit
 
-echo "Installing PHP and JS dependencies..."
-npm install
+echo "Installing PHP dependencies..."
 composer install || exit "$?"
-echo "Running JS Build..."
-npm run build:core || exit "$?"
 echo "Cleaning up PHP dependencies..."
 composer install --no-dev || exit "$?"
 
